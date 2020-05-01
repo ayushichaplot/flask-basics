@@ -19,7 +19,12 @@ Welcome to index.html
         {% endfor %}
 
 </ul>
-    <a href="{{url_for('more')}}">See More</a>
+    <a href="{{ url_for('more') }}">See More</a>
+
+<form action="{{ url_for('hello') }}" method="post">
+    <input  type="text" name="name" placeholder="Enter Your Name">
+    <button> Submit</button>
+</form>
 {% endblock %}
 
 </body>
