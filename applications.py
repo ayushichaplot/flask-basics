@@ -19,5 +19,9 @@ def hello(name):
 @app.route("/headline")
 def headline():
     headline = "Hello"
-    return render_template("index.html", headline= headline)
+    return render_template("index.html", headline = headline)
 
+@app.route("/list")
+def list():
+    names = ["Ayushi","Snehlata","Jerry","Tom"]
+    return render_template("index.html", names = names)
