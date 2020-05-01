@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>url_for in jinja</title>
+</head>
+<body>
+{% extends "layout.html" %}
+
+{% block heading %}
+Welcome to more.html
+{% endblock %}
+{% block body %}
+    <a href="{{url_for('index')}}">Go Back</a>
+{% endblock %}
+</body>
+</html>

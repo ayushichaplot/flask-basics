@@ -5,6 +5,11 @@
     <title>Flask</title>
 </head>
 <body>
+{% extends "layout.html" %}
+{% block heading %}
+Welcome to index.html
+{% endblock %}
+{% block body %}
 <h1> Hello World!</h1>
 <h2> {{headline}}</h2>
 <ul>
@@ -14,6 +19,8 @@
         {% endfor %}
 
 </ul>
+    <a href="{{url_for('more')}}">See More</a>
+{% endblock %}
 
 </body>
 </html>

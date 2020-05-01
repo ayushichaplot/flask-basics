@@ -25,3 +25,7 @@ def headline():
 def list():
     names = ["Ayushi","Snehlata","Jerry","Tom"]
     return render_template("index.html", names = names)
+
+@app.route("/more")
+def more():
+    return render_template("more.html")
